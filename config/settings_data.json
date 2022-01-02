@@ -31,6 +31,22 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "7fafa7a1-9009-4813-a3e0-46191dc33ed5": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Gifts",
+              "sub_menu_title": "OASIS HOLIDAY GIFT SET",
+              "sub_menu_img": "shopify:\/\/shop_images\/HO_Giftset_LG_1x1_400x_c06637e5-0d25-40bf-a219-c04cbab67d41.jpg",
+              "sub_menu_img_url": "#",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "7fafa7a1-9009-4813-a3e0-46191dc33ed5"
+        ],
         "settings": {
           "color_scheme": "background-2",
           "logo": "shopify:\/\/shop_images\/RainbowLogo_240x_8fa351b4-6bd6-46e1-8d1b-b39ffacf316c.png",
