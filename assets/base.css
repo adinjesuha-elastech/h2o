@@ -1875,8 +1875,6 @@ input[type='checkbox'] {
   grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 990px) {
@@ -2213,9 +2211,15 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+}
+
+.brand__menu-item{
+  color: #00357e !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .header__menu-item:hover {
@@ -2248,7 +2252,23 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__submenu.list-menu {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+}
+
+.header__submenu.list-menu > li {
+  padding: 40px 18px;
+  width: 200px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .header__submenu .header__submenu {
@@ -2262,7 +2282,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header__submenu .header__menu-item {
-  padding: 0.95rem 3.5rem 0.95rem 2rem;
+  /* padding: 0.95rem 3.5rem 0.95rem 2rem; */
 }
 
 .header__submenu .header__submenu .header__menu-item {
@@ -2278,7 +2298,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 details-disclosure > details {
-  position: relative;
+  /* position: relative; */
 }
 
 @keyframes animateMenuOpen {

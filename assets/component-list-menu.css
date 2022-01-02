@@ -4,10 +4,14 @@
 
 .list-menu--disclosure {
   position: absolute;
+  left: 0;
+  right: 0;
   min-width: 100%;
   width: 20rem;
   border: 1px solid rgba(var(--color-foreground), 0.2);
   background-color: rgb(var(--color-background));
+  display: flex;
+  justify-content: center;
 }
 
 .list-menu--disclosure:focus {
@@ -15,8 +19,8 @@
 }
 
 .list-menu__item--active {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  /* text-decoration: underline;
+  text-underline-offset: 0.3rem; */
 }
 
 .list-menu--disclosure.localization-selector {
