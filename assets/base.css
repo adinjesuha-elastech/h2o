@@ -154,7 +154,7 @@
 }
 
 .color-white{
-  color: #fff;
+  color: #fff !important;
 }
 
 
@@ -1836,8 +1836,8 @@ input[type='checkbox'] {
 
 .announcement-bar__message {
   text-align: center;
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 7px 15px;
+  margin: 0 auto;
   letter-spacing: 0.1rem;
 }
 
@@ -1880,6 +1880,7 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
+  
   .header--has-menu:not(.header--middle-left) {
     padding-bottom: 0;  
   }
@@ -2221,9 +2222,20 @@ details[open] > .header__icon--menu .icon-hamburger {
   color: rgb(var(--color-foreground));
 }
 
+.header__menu-item span {
+  transition: text-decoration var(--duration-short) ease;
+}
+
+.header__menu-item:hover span {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 .header__menu-item:hover .header__active-menu-item {
