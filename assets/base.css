@@ -2251,10 +2251,6 @@ details[open] > .header__icon--menu .icon-hamburger {
     transform var(--duration-default) ease;
 }
 
-.header__submenu.list-menu {
-  /* padding: 2rem 0; */
-}
-
 .header__submenu.list-menu > li {
   padding: 40px 18px;
   width: 200px;
@@ -2281,10 +2277,6 @@ details[open] > .header__icon--menu .icon-hamburger {
   right: 2rem;
 }
 
-.header__submenu .header__menu-item {
-  /* padding: 0.95rem 3.5rem 0.95rem 2rem; */
-}
-
 .header__submenu .header__submenu .header__menu-item {
   padding-left: 3rem;
 }
@@ -2295,10 +2287,6 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__submenu .icon-caret {
   right: 2rem;
-}
-
-details-disclosure > details {
-  /* position: relative; */
 }
 
 @keyframes animateMenuOpen {
