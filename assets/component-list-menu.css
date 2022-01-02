@@ -19,8 +19,8 @@
 }
 
 .list-menu__item--active {
-  /* text-decoration: underline;
-  text-underline-offset: 0.3rem; */
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 .list-menu--disclosure.localization-selector {
@@ -28,4 +28,13 @@
   overflow: auto;
   width: 10rem;
   padding: 0.5rem;
+}
+
+.list-menu__item--img{
+  width: 200px;
+  height: 200px;
+}
+
+.list-menu__item--column-title {
+  margin-bottom: 20px;
 }
