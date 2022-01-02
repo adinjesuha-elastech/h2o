@@ -42,10 +42,22 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": "#"
             }
+          },
+          "423e547b-2f7d-484e-9ed0-4491dd13d221": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Gifts",
+              "sub_menu_title": "POWER COUPLE BUNDLE",
+              "sub_menu_img": "shopify:\/\/shop_images\/PowerfulPair_LG_1x1_2x_400x_010d9aa7-a3bc-4f07-b336-e0b7bca4ecbf.jpg",
+              "sub_menu_img_url": "#",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
-          "7fafa7a1-9009-4813-a3e0-46191dc33ed5"
+          "7fafa7a1-9009-4813-a3e0-46191dc33ed5",
+          "423e547b-2f7d-484e-9ed0-4491dd13d221"
         ],
         "settings": {
           "color_scheme": "background-2",
