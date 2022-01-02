@@ -64,12 +64,24 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "73fa0c3e-eb13-4e8c-a1a1-48ac5862a80b": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Gifts",
+              "sub_menu_title": "gifts under $100",
+              "sub_menu_img": "shopify:\/\/shop_images\/SelfCare_Bundle_LG_1x1_400x_ad9185d6-2794-4c6a-ba66-48b1af9db7bb.jpg",
+              "sub_menu_img_url": "#",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
           "7fafa7a1-9009-4813-a3e0-46191dc33ed5",
           "423e547b-2f7d-484e-9ed0-4491dd13d221",
-          "fc046687-b084-41e9-933b-7cf739542ffd"
+          "fc046687-b084-41e9-933b-7cf739542ffd",
+          "73fa0c3e-eb13-4e8c-a1a1-48ac5862a80b"
         ],
         "settings": {
           "color_scheme": "background-2",
