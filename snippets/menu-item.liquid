@@ -1,0 +1,36 @@
+<li class="main-nav-sub-menu-column">
+  {% if config.sub_menu_img_url %}
+    <a href="{{ config.sub_menu_img_url }}" class="main-nav-mega-menu-link">
+  {% endif %}
+    {% if config.sub_menu_title %}
+      <div class="main-nav-sub-menu-column-title">{{ config.sub_menu_title }}</div>
+    {% endif %}
+  {% if config.sub_menu_img_url %}
+    </a>
+  {% endif %}
+  {% if config.sub_menu_img_url %}
+    <a href="{{ config.sub_menu_img_url }}" class="main-nav-mega-menu-link">
+  {% endif %}
+    {% if config.sub_menu_img %}
+      {% assign sub_menu_img_element = config.sub_menu_img %}
+      <img src="{{ sub_menu_img_element | img_url: '400x' }}" alt="{{ config.sub_menu_title }}" width="{{sub_menu_img_element.width}}" height="{{sub_menu_img_element.height}}" class="main-nav-sub-menu-img" loading="lazy">
+    {% endif %}
+  {% if config.sub_menu_img_url %}
+    </a>
+  {% endif %}
+
+  {% comment %} SubMenu {% endcomment %}
+  {% if config.sub_menu_link_list %}
+    {% for link in linklists[config.sub_menu_link_list].links %}
+      <a href="{{ link.url }}" class="main-nav-sub-menu-column-link">{{ link.title }}</a>
+    {% endfor %}
+  {% endif %}
+  {% comment %} Lower links {% endcomment %}
+  {% if config.sub_menu_lower_link_url %}
+    <a href="{{ config.sub_menu_lower_link_url }}" class="main-nav-sub-menu-footer">
+      {% if config.sub_menu_lower_link_label %}
+        {{ config.sub_menu_lower_link_label }}
+      {% endif %}
+    </a>
+  {% endif %}
+</li>
