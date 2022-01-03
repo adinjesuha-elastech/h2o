@@ -2218,6 +2218,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 .brand__menu-item{
   color: #00357e !important;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 700;
 }

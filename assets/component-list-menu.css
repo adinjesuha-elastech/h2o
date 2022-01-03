@@ -38,3 +38,16 @@
 .list-menu__item--column-title {
   margin-bottom: 20px;
 }
+
+.list-menu__item--column-title:hover span {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.list-menu__item--menu-footer{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 22px;
+  text-decoration: underline;
+}

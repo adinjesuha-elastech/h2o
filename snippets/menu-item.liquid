@@ -1,9 +1,9 @@
 <li>
   {% if config.sub_menu_img_url %}
-    <a href="{{ config.sub_menu_img_url }}" class="brand__menu-item caption-large focus-inset">
+    <a href="{{ config.sub_menu_img_url }}" class="brand__menu-item list-menu__item--column-title caption-large focus-inset">
   {% endif %}
     {% if config.sub_menu_title %}
-      <div class="list-menu__item--column-title">{{ config.sub_menu_title }}</div>
+      <span>{{ config.sub_menu_title }}</span>
     {% endif %}
   {% if config.sub_menu_img_url %}
     </a>
@@ -27,7 +27,7 @@
   {% endif %}
   {% comment %} Lower links {% endcomment %}
   {% if config.sub_menu_lower_link_url %}
-    <a href="{{ config.sub_menu_lower_link_url }}" class="main-nav-sub-menu-footer focus-inset">
+    <a href="{{ config.sub_menu_lower_link_url }}" class="brand__menu-item list-menu__item--menu-footer focus-inset">
       {% if config.sub_menu_lower_link_label %}
         {{ config.sub_menu_lower_link_label }}
       {% endif %}
