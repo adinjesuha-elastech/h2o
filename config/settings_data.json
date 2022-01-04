@@ -1,15 +1,20 @@
 {
   "current": {
     "colors_solid_button_labels": "#FFFFFF",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#00357e",
     "colors_accent_2": "#00357e",
     "colors_accent_3": "#334fb4",
     "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_outline_button_labels": "#000000",
     "colors_background_1": "#FFFFFF",
     "colors_background_2": "#F3F3F3",
     "type_header_font": "lato_n4",
     "type_body_font": "karla_n4",
+    "sale_badge_color_scheme": "background-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "social_twitter_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/6943\/8782\/t\/195\/assets\/T.png?v=17678021500070620212",
+    "social_facebook_link": "https:\/\/www.facebook.com\/H2OPlus.usa",
+    "social_instagram_link": "https:\/\/www.instagram.com\/h2oplus\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
