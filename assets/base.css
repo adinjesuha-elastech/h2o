@@ -2015,8 +2015,10 @@ img[src*="cdn.shopify.com"][src*=RainbowLogo][src*="x."] {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
-  width: 7.4rem;
+  /* height: 4.4rem;
+  width: 7.4rem; */
+  line-height: calc(1 + 0.3 / var(--font-body-scale));
+  padding: 27px 20px;
 }
 
 .header__icon--cart {

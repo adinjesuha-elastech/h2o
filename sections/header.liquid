@@ -344,7 +344,7 @@
     {%- if request.page_type == 'index' -%}
       </h1>
     {%- endif -%}
-
+    <!-- :::::::::::::::::::::::::Main Menu::::::::::::::::::::::::: -->
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
@@ -382,20 +382,52 @@
         </ul>
       </nav>
     {%- endif -%}
+    <!-- :::::::::::::::::::::::::End Main Menu::::::::::::::::::::::::: -->
 
+    <!-- :::::::::::::::::::::::::Start Right Menu::::::::::::::::::::::::: -->
     <div class="header__right-menu">
-       <a href="/pages/about-us" class="list-menu__item link focus-inset small-hide additionalItem">OUR STORY</a>
-       {%- if shop.customer_accounts_enabled -%}
+      {%- for link in section.settings.right_main_nav.links -%}
+        <div>
+          {%- if link.links != blank -%}
+            <details-disclosure>
+              <details id="Details-HeaderMenu-{{ forloop.index }}">
+                <summary class="header__menu-item list-menu__item link focus-inset small-hide additionalItem">
+                  <span class="brand__menu-item {%- if link.child_active %} header__active-menu-item{% endif %}">{{ link.title | escape }}</span>
+                </summary>
+                <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {% when 'sub_menu_img_block' %}
+                        {% if block.settings.sub_menu_img_block_id == link.title %}
+                          {% render 'menu-item', config: block.settings %}
+                        {% endif %}
+                      {% when 'sub_menu_block' %}
+                        {% if block.settings.sub_menu_img_block_id == link.title %}
+                          {% render 'menu-item', config: block.settings %}
+                        {% endif %}
+                    {% endcase %}
+                  {% endfor %}
+                </ul>
+              </details>
+            </details-disclosure>
+          {%- else -%}
+            <a href="{{ link.url }}" class="header__menu-item header__menu-item brand__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+              <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+            </a>
+          {%- endif -%}
+        </div>
+        <!-- <a href="/pages/about-us" class="list-menu__item link focus-inset ">OUR STORY</a> -->
+      {%- endfor -%}
+      {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          
           <span class="hide-mobile small-hide">
-            {%- liquid
-              if customer
-                echo 'customer.account_fallback' | t
-              else
-                echo 'customer.log_in' | t
-              endif
-            -%}
+          {%- liquid
+            if customer
+              echo 'customer.account_fallback' | t
+            else
+              echo 'customer.log_in' | t
+            endif
+          -%}
           </span>
         </a>
       {%- endif -%}
@@ -471,9 +503,6 @@
           </div>
         </details>
       </details-modal>
-
-     
-
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         <span class="hide-mobile small-hide">CART</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }} </span>
@@ -487,6 +516,7 @@
         {%- endif -%}
       </a>
     </div>
+    <!-- :::::::::::::::::::::::::End Right Menu::::::::::::::::::::::::: -->
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
@@ -694,8 +724,9 @@
     },
     {
       "type": "link_list",
-      "id": "left_main_nav",
-      "label": "Left side - Navigation"
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
     },
     {
       "type": "link_list",
@@ -706,12 +737,6 @@
       "type": "link_list",
       "id": "main_nav_mobile_footer",
       "label": "Mobile footer - Navigation"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
     },
     {
       "type": "checkbox",
