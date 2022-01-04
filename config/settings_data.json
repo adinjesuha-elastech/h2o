@@ -139,6 +139,16 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85": {
+            "type": "sub_menu_block",
+            "settings": {
+              "sub_menu_img_block_id": "Skincare",
+              "sub_menu_title": "Targets",
+              "sub_menu_link_list": "skincare-targets",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
@@ -151,7 +161,8 @@
           "c4a8475d-89df-4aac-ab8e-ccb9ecdb0866",
           "2c3c9a80-0821-4501-8d45-079f2c42bb3a",
           "7773e9e9-3627-47be-98a3-b4487261c9e5",
-          "ecccd3f7-bc5b-4de3-a49a-06d46ade5e21"
+          "ecccd3f7-bc5b-4de3-a49a-06d46ade5e21",
+          "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85"
         ],
         "settings": {
           "color_scheme": "background-2",
