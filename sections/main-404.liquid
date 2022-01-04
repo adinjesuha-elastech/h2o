@@ -14,10 +14,63 @@
   <p>
     {{ 'templates.404.subtext' | t }}
   </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
+  {%- for block in section.blocks -%}
+  <h1 class="title">{{ block.settings.heading | escape }}</h1>
+  
+  {{ block.settings.text }}
+  {%- endfor -%}
   <a href="{{ routes.all_products_collection_url }}" class="button">
     {{ 'general.continue_shopping' | t }}
   </a>
+  
 </div>
+{% schema %}
+{
+  "name": "404",
+  "class": "spaced-section spaced-section--full-width",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.image-with-text.presets.name",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

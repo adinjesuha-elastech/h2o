@@ -83,7 +83,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1 {% elsif block.settings.heading_size == 'small'%}h3{%else%}h0{% endif %}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
@@ -235,7 +235,7 @@
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "text",
@@ -248,6 +248,10 @@
           "id": "heading_size",
           "options": [
             {
+              "value": "small",
+              "label": "Small"
+            },
+			{
               "value": "medium",
               "label": "t:sections.image-banner.blocks.heading.settings.heading_size.options__1.label"
             },

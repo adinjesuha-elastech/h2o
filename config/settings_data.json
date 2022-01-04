@@ -15,6 +15,11 @@
     "social_twitter_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0083\/6943\/8782\/t\/195\/assets\/T.png?v=17678021500070620212",
     "social_facebook_link": "https:\/\/www.facebook.com\/H2OPlus.usa",
     "social_instagram_link": "https:\/\/www.instagram.com\/h2oplus\/",
+<<<<<<< HEAD
+=======
+    "predictive_search_enabled": false,
+    "predictive_search_show_price": false,
+>>>>>>> 68e2287 (Merge latest changes from Carolina)
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -22,7 +27,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Free Gift with $50+ • 30% Off Hydration Sensitive • 20% Off Detox with DETOX20",
+              "text": "Free Shipping, Minis & Gift on Orders $50+",
               "color_scheme": "accent-2",
               "link": ""
             }
@@ -254,14 +259,22 @@
             "type": "link_list",
             "settings": {
               "heading": "QUICK SHOP",
+<<<<<<< HEAD
               "menu": "footer"
+=======
+              "menu": "footer-menu-2"
+>>>>>>> 68e2287 (Merge latest changes from Carolina)
             }
           },
           "5faa02ea-edc3-4c81-be46-a962aae929a3": {
             "type": "link_list",
             "settings": {
               "heading": "ABOUT US",
+<<<<<<< HEAD
               "menu": "footer"
+=======
+              "menu": "footer-menu-3"
+>>>>>>> 68e2287 (Merge latest changes from Carolina)
             }
           },
           "233362f7-d4e2-494c-94f5-beefe8dc46d8": {
@@ -269,7 +282,11 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/H2O_Logo_blue_1000px.png",
               "image_width": 100,
+<<<<<<< HEAD
               "alignment": "center"
+=======
+              "alignment": "right"
+>>>>>>> 68e2287 (Merge latest changes from Carolina)
             }
           }
         },
@@ -282,7 +299,11 @@
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
+<<<<<<< HEAD
           "newsletter_heading": "Subscribe to our emails",
+=======
+          "newsletter_heading": "Get updates on the latest happenings from H2O+",
+>>>>>>> 68e2287 (Merge latest changes from Carolina)
           "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,

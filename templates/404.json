@@ -2,6 +2,24 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "blocks": {
+        "3acecf4b-e555-4628-a10f-15522c85c134": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE PAGE YOU'RE LOOKING FOR CAN'T BE FOUND."
+          }
+        },
+        "0fff7f57-4256-4e1e-a368-0e6f82893845": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please try searching or go to our home page to continue shopping.<br\/>Or please contact us at <a href=\"mailto:hello@h2oplus.com\">hello@h2oplus.com<\/a> if we can further assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3acecf4b-e555-4628-a10f-15522c85c134",
+        "0fff7f57-4256-4e1e-a368-0e6f82893845"
+      ],
       "settings": {
       }
     }
