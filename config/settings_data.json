@@ -75,13 +75,25 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "a7cc654d-dcb7-4e37-91b0-b3fe9ac52da4": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Best Sellers",
+              "sub_menu_title": "Blue Gel Moisturizer",
+              "sub_menu_img": "shopify:\/\/shop_images\/HO_RGM_Editorial_960x960_05_400x_c27487a9-23bc-4b9a-b977-6d0e0b7fbda6.jpg",
+              "sub_menu_img_url": "shopify:\/\/products\/hydration-oasis-refreshing-gel-moisturizer",
+              "sub_menu_lower_link_label": "Shop all best sellers >",
+              "sub_menu_lower_link_url": "shopify:\/\/collections\/best-sellers"
+            }
           }
         },
         "block_order": [
           "7fafa7a1-9009-4813-a3e0-46191dc33ed5",
           "3146dec7-e64a-4957-9f1a-4044beb60927",
           "fc046687-b084-41e9-933b-7cf739542ffd",
-          "73fa0c3e-eb13-4e8c-a1a1-48ac5862a80b"
+          "73fa0c3e-eb13-4e8c-a1a1-48ac5862a80b",
+          "a7cc654d-dcb7-4e37-91b0-b3fe9ac52da4"
         ],
         "settings": {
           "color_scheme": "background-2",
