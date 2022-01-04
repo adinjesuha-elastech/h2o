@@ -119,6 +119,16 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "7773e9e9-3627-47be-98a3-b4487261c9e5": {
+            "type": "sub_menu_block",
+            "settings": {
+              "sub_menu_img_block_id": "Skincare",
+              "sub_menu_title": "Categories",
+              "sub_menu_link_list": "skincare-categories",
+              "sub_menu_lower_link_label": "SHOP ALL SKINCARE >",
+              "sub_menu_lower_link_url": "shopify:\/\/collections\/all-face-care"
+            }
           }
         },
         "block_order": [
@@ -129,7 +139,8 @@
           "a7cc654d-dcb7-4e37-91b0-b3fe9ac52da4",
           "2ad46714-af72-49fc-ae34-346867d11413",
           "c4a8475d-89df-4aac-ab8e-ccb9ecdb0866",
-          "2c3c9a80-0821-4501-8d45-079f2c42bb3a"
+          "2c3c9a80-0821-4501-8d45-079f2c42bb3a",
+          "7773e9e9-3627-47be-98a3-b4487261c9e5"
         ],
         "settings": {
           "color_scheme": "background-2",
