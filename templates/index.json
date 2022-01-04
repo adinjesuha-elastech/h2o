@@ -6,14 +6,20 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Everyday Extraordinary Skincare Solutions",
             "heading_size": "medium"
+          }
+        },
+        "8de2fff7-b69f-4b0d-a7f4-b07d272a53ab": {
+          "type": "text",
+          "settings": {
+            "text": "Hydrate, Cleanse & Rejuvenate Your Skin With H2O+"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "SHOP NOW",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -24,6 +30,7 @@
       },
       "block_order": [
         "heading",
+        "8de2fff7-b69f-4b0d-a7f4-b07d272a53ab",
         "button"
       ],
       "settings": {
