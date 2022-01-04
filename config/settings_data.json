@@ -149,6 +149,17 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "119d237a-76e4-479c-b926-22ac21b6baa7": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Skincare",
+              "sub_menu_title": "Subscribe & save",
+              "sub_menu_img": "shopify:\/\/shop_images\/New_Nav_img_400x_229e9e81-591a-4c52-9bbe-fefb7b2fdee8.jpg",
+              "sub_menu_img_url": "shopify:\/\/collections\/subscriptions",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
@@ -162,7 +173,8 @@
           "2c3c9a80-0821-4501-8d45-079f2c42bb3a",
           "7773e9e9-3627-47be-98a3-b4487261c9e5",
           "ecccd3f7-bc5b-4de3-a49a-06d46ade5e21",
-          "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85"
+          "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85",
+          "119d237a-76e4-479c-b926-22ac21b6baa7"
         ],
         "settings": {
           "color_scheme": "background-2",
