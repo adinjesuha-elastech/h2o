@@ -108,6 +108,17 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "2c3c9a80-0821-4501-8d45-079f2c42bb3a": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Best Sellers",
+              "sub_menu_title": "Hydration oasis travel kit",
+              "sub_menu_img": "shopify:\/\/shop_images\/hydration-oasis-travel-kit_400x_400x_4344aac0-d1b0-49ea-8d41-b6c54149426a.jpg",
+              "sub_menu_img_url": "shopify:\/\/products\/hydration-oasis-travel-kit-2021",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
@@ -117,7 +128,8 @@
           "73fa0c3e-eb13-4e8c-a1a1-48ac5862a80b",
           "a7cc654d-dcb7-4e37-91b0-b3fe9ac52da4",
           "2ad46714-af72-49fc-ae34-346867d11413",
-          "c4a8475d-89df-4aac-ab8e-ccb9ecdb0866"
+          "c4a8475d-89df-4aac-ab8e-ccb9ecdb0866",
+          "2c3c9a80-0821-4501-8d45-079f2c42bb3a"
         ],
         "settings": {
           "color_scheme": "background-2",
