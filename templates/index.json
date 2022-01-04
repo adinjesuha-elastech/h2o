@@ -13,11 +13,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-<<<<<<< HEAD
-            "heading": "Everyday Extraordinary Skincare Solutions",
-=======
             "heading": "EVERYDAY EXTRAORDINARY SKINCARE SOLUTIONS",
->>>>>>> 68e2287 (Merge latest changes from Carolina)
             "heading_size": "medium"
           }
         },
@@ -62,11 +58,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-<<<<<<< HEAD
-            "heading": "Truly Hydrating Skincare",
-=======
             "heading": "TRULY HYDRATING SKINCARE",
->>>>>>> 68e2287 (Merge latest changes from Carolina)
             "heading_size": "h1"
           }
         },
@@ -80,11 +72,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn more",
-<<<<<<< HEAD
-            "button_link": "",
-=======
             "button_link": "#",
->>>>>>> 68e2287 (Merge latest changes from Carolina)
             "button_style_secondary": true
           }
         }
@@ -118,34 +106,12 @@
     "collage": {
       "type": "collage",
       "blocks": {
-<<<<<<< HEAD
-        "b750b83d-a0d2-475a-8ba9-534014fb94c0": {
-          "type": "image",
-          "settings": {
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "collection": {
-=======
         "c4b5b18a-80c5-420f-adb7-c915a0ce7d87": {
->>>>>>> 68e2287 (Merge latest changes from Carolina)
           "type": "collection",
           "settings": {
             "collection": "",
             "image_padding": false,
             "color_scheme": "background-1"
-<<<<<<< HEAD
-=======
           }
         },
         "9afd4c1c-5a03-43dc-b62a-c9157db47626": {
@@ -170,21 +136,14 @@
           "settings": {
             "image_padding": false,
             "color_scheme": "background-1"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
           }
         }
       },
       "block_order": [
-<<<<<<< HEAD
-        "b750b83d-a0d2-475a-8ba9-534014fb94c0",
-        "product",
-        "collection"
-=======
         "c4b5b18a-80c5-420f-adb7-c915a0ce7d87",
         "9afd4c1c-5a03-43dc-b62a-c9157db47626",
         "c7ae87e4-a34a-4f2d-a918-d5e444193e4e",
         "39bffab4-2a92-437b-a698-e44934addd19"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
       ],
       "settings": {
         "heading": "SHOP BY SKIN GOAL",
@@ -192,51 +151,26 @@
         "mobile_layout": "collage"
       }
     },
-<<<<<<< HEAD
-    "multi_column": {
-      "type": "multicolumn",
-=======
     "164128797641ccc6cd": {
       "type": "image-with-text",
->>>>>>> 68e2287 (Merge latest changes from Carolina)
       "blocks": {
         "aad5a42e-14b6-4553-ad9f-d0ad9c355952": {
           "type": "heading",
           "settings": {
-<<<<<<< HEAD
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-=======
             "heading": "OUT STORY",
             "headingId": "h3"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
           }
         },
         "16412879765763653c-0": {
           "type": "heading",
           "settings": {
-<<<<<<< HEAD
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-=======
             "heading": "Clinically Proven Skincare That Works",
             "headingId": "Image with text"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
           }
         },
         "16412879765763653c-1": {
           "type": "text",
           "settings": {
-<<<<<<< HEAD
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-=======
             "text": "<p>Our products are clinically proven to improve skin texture, smoothness, and luminosity. <br\/><\/p>"
           }
         },
@@ -245,7 +179,6 @@
           "settings": {
             "button_label": "Button label",
             "button_link": "#"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
           }
         }
       },
@@ -256,16 +189,6 @@
         "16412879765763653c-2"
       ],
       "settings": {
-<<<<<<< HEAD
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-=======
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "text_first"
@@ -329,7 +252,6 @@
         "heading": "SHOP BY COLLECTION",
         "desktop_layout": "left",
         "mobile_layout": "collage"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
       }
     }
   },
@@ -338,11 +260,7 @@
     "rich_text",
     "featured_products",
     "collage",
-<<<<<<< HEAD
-    "multi_column"
-=======
     "164128797641ccc6cd",
     "16412874857305ef98"
->>>>>>> 68e2287 (Merge latest changes from Carolina)
   ]
 }
