@@ -180,6 +180,17 @@
               "sub_menu_lower_link_label": "",
               "sub_menu_lower_link_url": ""
             }
+          },
+          "2a5caa18-d6d5-4425-a8bc-36e05a71de27": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "Body",
+              "sub_menu_title": "Featured",
+              "sub_menu_img": "shopify:\/\/shop_images\/1593451306_0_400x_400x_6e39b5b7-3222-4cb2-8765-6f2f8f6477ca.jpg",
+              "sub_menu_img_url": "",
+              "sub_menu_lower_link_label": "DETOX BODY >",
+              "sub_menu_lower_link_url": "#"
+            }
           }
         },
         "block_order": [
@@ -196,7 +207,8 @@
           "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85",
           "119d237a-76e4-479c-b926-22ac21b6baa7",
           "0134cf8c-a2ff-4342-ba20-2a0ea4a9f048",
-          "89460621-d7aa-4ba7-8e4b-ae527b3cdedc"
+          "89460621-d7aa-4ba7-8e4b-ae527b3cdedc",
+          "2a5caa18-d6d5-4425-a8bc-36e05a71de27"
         ],
         "settings": {
           "color_scheme": "background-2",
