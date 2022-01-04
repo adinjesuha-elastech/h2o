@@ -369,31 +369,6 @@
                             {% endif %}
                         {% endcase %}
                       {% endfor %}
-                      <!-- {%- for childlink in link.links -%}
-                        <li>
-                          {%- if childlink.links == blank -%}
-                            <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                              {{ childlink.title | escape }}
-                            </a>
-                          {%- else -%}
-                            <details id="Details-HeaderSubMenu-{{ forloop.index }}">
-                              <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                {{ childlink.title | escape }}
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
-                                {%- for grandchildlink in childlink.links -%}
-                                  <li>
-                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                      {{ grandchildlink.title | escape }}
-                                    </a>
-                                  </li>
-                                {%- endfor -%}
-                              </ul>
-                            </details>
-                          {%- endif -%}
-                        </li>
-                      {%- endfor -%} -->
                     </ul>
                   </details>
                 </details-disclosure>
@@ -408,13 +383,8 @@
       </nav>
     {%- endif -%}
 
-    <div class="header__icons">
-       <a href="/pages/about-us" class="header__icon header__icon--account link focus-inset small-hide additionalItem">
-          
-         
-            OUR STORY
-          
-        </a>
+    <div class="header__right-menu">
+       <a href="/pages/about-us" class="list-menu__item link focus-inset small-hide additionalItem">OUR STORY</a>
        {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           

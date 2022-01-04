@@ -1976,7 +1976,7 @@ img[src*="cdn.shopify.com"][src*=RainbowLogo][src*="x."] {
 }
 
 /* Header icons */
-.header__icons {
+.header__right-menu {
   display: flex;
   grid-area: icons;
   justify-self: end;
@@ -2025,7 +2025,7 @@ img[src*="cdn.shopify.com"][src*=RainbowLogo][src*="x."] {
 }
 
 @media screen and (max-width: 989px) {
-  menu-drawer ~ .header__icons .header__icon--account {
+  menu-drawer ~ .header__right-menu .header__icon--account {
     display: none;
   }
 }
@@ -2349,7 +2349,7 @@ details[open] > .header__icon--menu .icon-hamburger {
     stroke: CanvasText;
   }
 }
-.header__icons a, .header__icons .link{
+.header__right-menu a, .header__right-menu .link{
   	text-decoration:none;
   	color: #00357e!important;
      font-size: 13px;
