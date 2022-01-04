@@ -246,21 +246,38 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "CUSTOMER SERVICE",
               "menu": "footer"
             }
           },
-          "footer-1": {
-            "type": "text",
+          "6a2745a3-e5c2-4cfb-8bcf-d5d0b1c2cd2d": {
+            "type": "link_list",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "QUICK SHOP",
+              "menu": "footer"
+            }
+          },
+          "5faa02ea-edc3-4c81-be46-a962aae929a3": {
+            "type": "link_list",
+            "settings": {
+              "heading": "ABOUT US",
+              "menu": "footer"
+            }
+          },
+          "233362f7-d4e2-494c-94f5-beefe8dc46d8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/H2O_Logo_blue_1000px.png",
+              "image_width": 100,
+              "alignment": "center"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "6a2745a3-e5c2-4cfb-8bcf-d5d0b1c2cd2d",
+          "5faa02ea-edc3-4c81-be46-a962aae929a3",
+          "233362f7-d4e2-494c-94f5-beefe8dc46d8"
         ],
         "settings": {
           "color_scheme": "background-1",
