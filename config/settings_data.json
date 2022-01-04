@@ -191,6 +191,17 @@
               "sub_menu_lower_link_label": "DETOX BODY >",
               "sub_menu_lower_link_url": "#"
             }
+          },
+          "99b721d2-e8b3-4dbe-a73b-ab24e98d5b54": {
+            "type": "sub_menu_img_block",
+            "settings": {
+              "sub_menu_img_block_id": "our story",
+              "sub_menu_title": "Skincare Routine Recommendations",
+              "sub_menu_img": "shopify:\/\/shop_images\/LaborDay_Shot_4_SQ_400x_38001c9c-7dfd-4965-8ecd-1067fa5dba63.jpg",
+              "sub_menu_img_url": "https:\/\/www.h2oplus.com\/blogs\/news\/skincare-routine-recommendations",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
@@ -208,7 +219,8 @@
           "119d237a-76e4-479c-b926-22ac21b6baa7",
           "0134cf8c-a2ff-4342-ba20-2a0ea4a9f048",
           "89460621-d7aa-4ba7-8e4b-ae527b3cdedc",
-          "2a5caa18-d6d5-4425-a8bc-36e05a71de27"
+          "2a5caa18-d6d5-4425-a8bc-36e05a71de27",
+          "99b721d2-e8b3-4dbe-a73b-ab24e98d5b54"
         ],
         "settings": {
           "color_scheme": "background-2",
