@@ -170,6 +170,16 @@
               "sub_menu_lower_link_label": "SHOP ALL BODY >",
               "sub_menu_lower_link_url": "shopify:\/\/collections\/all-body-products"
             }
+          },
+          "89460621-d7aa-4ba7-8e4b-ae527b3cdedc": {
+            "type": "sub_menu_block",
+            "settings": {
+              "sub_menu_img_block_id": "Body",
+              "sub_menu_title": "Collections",
+              "sub_menu_link_list": "body-collections",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
@@ -185,7 +195,8 @@
           "ecccd3f7-bc5b-4de3-a49a-06d46ade5e21",
           "b22fb8b9-d3f5-4ae7-9f3e-3bbda8e55e85",
           "119d237a-76e4-479c-b926-22ac21b6baa7",
-          "0134cf8c-a2ff-4342-ba20-2a0ea4a9f048"
+          "0134cf8c-a2ff-4342-ba20-2a0ea4a9f048",
+          "89460621-d7aa-4ba7-8e4b-ae527b3cdedc"
         ],
         "settings": {
           "color_scheme": "background-2",
