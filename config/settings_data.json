@@ -235,7 +235,7 @@
           "logo_width": 100,
           "logo_position": "middle-left",
           "left_main_nav": "",
-          "right_main_nav": "",
+          "right_main_nav": "main-nav-right",
           "main_nav_mobile_footer": "",
           "menu": "main-nav-left",
           "show_line_separator": true,
