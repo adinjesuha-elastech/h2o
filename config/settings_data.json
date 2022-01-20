@@ -108,6 +108,16 @@
               "sub_menu_lower_link_url": ""
             }
           },
+          "08233430-ab61-46ea-a247-45c33ac487af": {
+            "type": "sub_menu_block",
+            "settings": {
+              "sub_menu_img_block_id": "Gifts",
+              "sub_menu_title": "Targets",
+              "sub_menu_link_list": "skincare-targets",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
+          },
           "cfb7ec23-997c-4290-9ecb-97c8c31b342d": {
             "type": "sub_menu_img_block",
             "settings": {
@@ -125,22 +135,29 @@
               "sub_menu_lower_link_url_2": ""
             }
           },
-          "08233430-ab61-46ea-a247-45c33ac487af": {
-            "type": "sub_menu_block",
+          "787b5e31-3ffd-47a9-9cca-fd82ebf601fe": {
+            "type": "sub_menu_img_block",
             "settings": {
-              "sub_menu_img_block_id": "Gifts",
-              "sub_menu_title": "Targets",
-              "sub_menu_link_list": "skincare-targets",
-              "sub_menu_lower_link_label": "",
-              "sub_menu_lower_link_url": ""
+              "sub_menu_img_block_id_1": "Gifts",
+              "sub_menu_title_1": "gifts under $50",
+              "sub_menu_img_1": "shopify:\/\/shop_images\/SeaSalt_Giftset_LG_1x1_2x_400x_256x256_4731b21c-f092-4999-a1f9-f8952955699c.jpg",
+              "sub_menu_img_url_1": "shopify:\/\/collections\/gifts-under-50",
+              "sub_menu_lower_link_label_1": "",
+              "sub_menu_lower_link_url_1": "",
+              "sub_menu_img_block_id_2": "",
+              "sub_menu_title_2": "",
+              "sub_menu_img_url_2": "",
+              "sub_menu_lower_link_label_2": "",
+              "sub_menu_lower_link_url_2": ""
             }
           }
         },
         "block_order": [
           "8c8339ce-eeca-44cf-8dac-d1d392c29784",
           "68471474-c926-4297-9cdc-f4d97e6b3c2b",
+          "08233430-ab61-46ea-a247-45c33ac487af",
           "cfb7ec23-997c-4290-9ecb-97c8c31b342d",
-          "08233430-ab61-46ea-a247-45c33ac487af"
+          "787b5e31-3ffd-47a9-9cca-fd82ebf601fe"
         ],
         "settings": {
           "color_scheme": "background-1",
