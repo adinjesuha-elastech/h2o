@@ -370,7 +370,7 @@
                     </summary>
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {%- for block in section.blocks -%}
-                      	<div>{{block.settings}}</div>
+                      	<div>{{block.settings["id"]}}</div>
                       	{% case block.type %}
                         	{% when 'sub_menu_img_block' %}
                               {%- for slide in block.settings -%}
