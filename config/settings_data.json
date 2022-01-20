@@ -114,11 +114,22 @@
               "sub_menu_lower_link_label_2": "",
               "sub_menu_lower_link_url_2": ""
             }
+          },
+          "68471474-c926-4297-9cdc-f4d97e6b3c2b": {
+            "type": "sub_menu_block",
+            "settings": {
+              "sub_menu_img_block_id": "Gifts",
+              "sub_menu_title": "COLLECTIONS",
+              "sub_menu_link_list": "skincare-collections",
+              "sub_menu_lower_link_label": "",
+              "sub_menu_lower_link_url": ""
+            }
           }
         },
         "block_order": [
           "8c8339ce-eeca-44cf-8dac-d1d392c29784",
-          "cfb7ec23-997c-4290-9ecb-97c8c31b342d"
+          "cfb7ec23-997c-4290-9ecb-97c8c31b342d",
+          "68471474-c926-4297-9cdc-f4d97e6b3c2b"
         ],
         "settings": {
           "color_scheme": "background-1",
