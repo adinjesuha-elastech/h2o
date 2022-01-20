@@ -360,6 +360,7 @@
                       {% for block in section.blocks %} 
                       	{% assign popular_product = all_products[block.settings.product] %}
                         {% assign setting_name = 'popular_product_' | append: i %}
+                        <div>{{setting_name}}</div>
                       {% endfor %}
                     </ul>
                   </details>
