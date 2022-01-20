@@ -357,11 +357,14 @@
                       <span class="brand__menu-item {%- if link.child_active %} header__active-menu-item{% endif %}">{{ link.title | escape }}</span>
                     </summary>
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                      {% for i in (1..2) %}
-                        {% assign setting_name = 'popular_product_' | append: i %}
-                        {% assign handle = section.settings[setting_name] %}
-                        <div>{{setting_name}}</div>
+                      {% for block in section.blocks %} 
+						{% for i in (1..2) %}
+                          {% assign setting_name = 'popular_product_' | append: i %}
+                          {% assign handle = block.settings[setting_name] %}
+                          <div>{{handle}}</div>
+                        {% endfor %}
                       {% endfor %}
+                      
                     </ul>
                   </details>
                 </details-disclosure>
