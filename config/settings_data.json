@@ -91,11 +91,13 @@
           "cfb7ec23-997c-4290-9ecb-97c8c31b342d": {
             "type": "sub_menu_img_block",
             "settings": {
+              "image_1": true,
               "sub_menu_img_block_id_1": "Gifts",
-              "image_1": "shopify:\/\/shop_images\/HO_Giftset_LG_1x1_400x_256x256_19a092ec-fe36-4bf9-b838-c112d1c56b64.jpg",
+              "image_picker_1": "shopify:\/\/shop_images\/HO_Giftset_LG_1x1_400x_256x256_19a092ec-fe36-4bf9-b838-c112d1c56b64.jpg",
               "info_1": "<p>Menu One<\/p>",
+              "image_2": true,
               "sub_menu_img_block_id_2": "Gifts",
-              "image_2": "shopify:\/\/shop_images\/PowerfulPair_LG_1x1_2x_400x_256x256_50a62bb5-f9a3-498f-8b9a-790adb9bd7fc.jpg",
+              "image_picker_2": "shopify:\/\/shop_images\/PowerfulPair_LG_1x1_2x_400x_256x256_50a62bb5-f9a3-498f-8b9a-790adb9bd7fc.jpg",
               "info_2": "<p>Menu two<\/p>"
             }
           }
