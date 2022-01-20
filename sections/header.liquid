@@ -363,7 +363,7 @@
                           <div>{{image_item}}</div>
                           	{% case block.type %}
                               {% when 'sub_menu_img_block' %}
-                                {% if block.settings.sub_menu_img_block_id == link.title %}
+                                {% if block.settings[image_item] == link.title %}
                                   {% render 'menu-item', config: block.settings %}
                                 {% endif %}
                               {% when 'sub_menu_block' %}
