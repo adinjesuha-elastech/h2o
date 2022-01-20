@@ -373,6 +373,7 @@
 									{% endfor %}
 								{% when 'sub_menu_block' %}
 									{% if block.settings.sub_menu_img_block_id == link.title %}
+                                    	<span>{% if block.settings.sub_menu_img_block_id == link.title %} Hi {% endif %}</span>
 										{% render 'menu-item', config: block.settings %}
 									{% endif %}
                             {% endcase %}
