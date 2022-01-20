@@ -358,20 +358,19 @@
                     </summary>
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {% for block in section.blocks %}
-						{% for i in (1..2) %}
-                          {% assign image_item = 'sub_menu_img_block_id_' | append: i %}
-                          <div>{{image_item}}</div>
-                          	{% case block.type %}
-                              {% when 'sub_menu_img_block' %}
-                                {% if block.settings[image_item] == link.title %}
-                                  {% render 'menu-item', config: block.settings %}
-                                {% endif %}
+                        {% case block.type %}
+	                        {% when 'sub_menu_img_block' %}
+								{% for i in (1..2) %}
+                                  {% assign image_item = 'sub_menu_img_block_id_' | append: i %}
+                                  {% if block.settings[image_item] == link.title %}
+                                    {% render 'menu-item', config: block.settings %}
+                                  {% endif %}
+                              	{% endfor %}
                               {% when 'sub_menu_block' %}
                                 {% if block.settings.sub_menu_img_block_id == link.title %}
                                   {% render 'menu-item', config: block.settings %}
                                 {% endif %}
                             {% endcase %}
-                        {% endfor %}
                       {% endfor %}
                     </ul>
                   </details>
