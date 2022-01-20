@@ -373,7 +373,7 @@
                       	{% case block.type %}
                         	{% when 'sub_menu_img_block' %}
                               {%- for slide in block.settings -%}
-                              <strong class="cta__title">{{ block.settings.image_1 }}</strong>
+                              <strong class="cta__title">{{ block.settings }}</strong>
                               	{%- if block.id contains "image" and slide.src -%}
                                 	{%- assign id = block.id | split: "_" | last -%}
                                     {%- assign info = "info_" | append: id -%}
