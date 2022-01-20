@@ -374,10 +374,10 @@
                         	{% when 'sub_menu_img_block' %}
                               {%- for slide in block.settings -%}
                               <strong class="cta__title">{{ block.shopify_attributes }}</strong>
-                              	{%- if slide.id contains "image" and slide.src -%}
-                                	{%- assign id = slide.id | split: "_" | last -%}
+                              	{%- if block.id contains "image" and slide.src -%}
+                                	{%- assign id = block.id | split: "_" | last -%}
                                     {%- assign info = "info_" | append: id -%}
-                                    {% render 'menu-item', config: block.settings, image: slide, info: block.settings[info] %}
+                                    {% render 'menu-item', config: block.settings, image: block, info: block.settings[info] %}
 								{%- endif -%}
                               {%- endfor -%}
                             {% when 'sub_menu_block' %}
