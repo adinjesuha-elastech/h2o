@@ -377,7 +377,7 @@
                                     <div>hi</div>
                                     {%- assign id = slide.id | split: "_" | last -%}
                                     {%- assign info = "info_" | append: id -%}
-                                    {% render 'menu-item', image: slide, info: block.settings[info] %}
+                                    {% render 'menu-item', config: block.settings, image: slide, info: block.settings[info] %}
                                   {%- endif -%}
                               {%- endfor -%}
                             {% when 'sub_menu_block' %}
