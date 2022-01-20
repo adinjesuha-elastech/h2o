@@ -367,6 +367,7 @@
                                     {% assign sub_menu_img_url = 'sub_menu_img_url_' | append: i %}
                                     {% assign sub_menu_lower_link_label = 'sub_menu_lower_link_label_' | append: i %}
                                     {% assign sub_menu_lower_link_url = 'sub_menu_lower_link_url_' | append: i %}
+                                    <div>{{sub_menu_title}}</div>
                                     {% if block.settings[image_item] == link.title %}
                                       {% render 'menu-item', sub_menu_img_block_id: sub_menu_img_block_id, sub_menu_title: sub_menu_title, sub_menu_img: sub_menu_img, sub_menu_img_url: sub_menu_img_url, sub_menu_lower_link_label: sub_menu_lower_link_label, sub_menu_lower_link_url: sub_menu_lower_link_url  %}
                                     {% endif %}
