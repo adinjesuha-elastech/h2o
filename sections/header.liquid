@@ -362,17 +362,10 @@
                             	{% when 'sub_menu_img_block' %}
                                   {% for i in (1..2) %}
                                     {% assign image_item = 'sub_menu_img_block_id_' | append: i %}
-                                    {% assign image = 'image_picker_' | append: i %}
-                                    <div>{{image_item}}</div>
                                     {% if block.settings[image_item] == link.title %}
                                       {% render 'menu-item', config: block.settings, image: image %}
                                     {% endif %}
                                   {% endfor %}
-								{% when 'sub_menu_block' %}
-                                	<div>h1</div>
-                                  {% if block.settings.sub_menu_img_block_id == link.title %}
-                                    {% render 'menu-item', config: block.settings %}
-                                  {% endif %}
                             {% endcase %}
                       {% endfor %}
                     </ul>
@@ -810,15 +803,29 @@
           "info": "Use the name of the Main menu to link this options" 
         },
         {
-          "type": "image_picker",
-          "id": "image_picker_1",
-          "label": "Slideshow Image"
+          "id": "sub_menu_title_1",
+          "type": "text",
+          "label": "Sub Menu Title"
         },
         {
-          "type": "richtext",
-          "id": "info_1",
-          "label": "Slide 1 Info",
-          "default": "<p>Info here</p>"
+          "id": "sub_menu_img_1",
+          "type": "image_picker",
+          "label": "Menu Image"
+        },
+        {
+          "id": "sub_menu_img_url_1",
+          "type": "url",
+          "label": "Menu Image URL"
+        },
+        {
+          "id": "sub_menu_lower_link_label_1",
+          "type": "text",
+          "label": "Lower link Label"
+        },
+        {
+          "id": "sub_menu_lower_link_url_1",
+          "type": "url",
+          "label": "Lower link URL"
         },
         {
           "type": "text", 
@@ -827,15 +834,29 @@
           "info": "Use the name of the Main menu to link this options" 
         },
         {
-          "type": "image_picker",
-          "id": "image_picker_2",
-          "label": "Slideshow Image"
+          "id": "sub_menu_title_2",
+          "type": "text",
+          "label": "Sub Menu Title"
         },
         {
-          "type": "richtext",
-          "id": "info_2",
-          "label": "Slide 1 Info",
-          "default": "<p>Info here</p>"
+          "id": "sub_menu_img_2",
+          "type": "image_picker",
+          "label": "Menu Image"
+        },
+        {
+          "id": "sub_menu_img_url_2",
+          "type": "url",
+          "label": "Menu Image URL"
+        },
+        {
+          "id": "sub_menu_lower_link_label_2",
+          "type": "text",
+          "label": "Lower link Label"
+        },
+        {
+          "id": "sub_menu_lower_link_url_2",
+          "type": "url",
+          "label": "Lower link URL"
         }
       ]
     }
