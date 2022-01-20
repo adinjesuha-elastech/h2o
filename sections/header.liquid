@@ -375,7 +375,7 @@
                                   {% if block.settings.sub_menu_img_block_id == link.title %}
                                   	<span>{{block.settings.sub_menu_img_block_id}}</span>
                                   {% else %}
-                                  	<span>No</span>
+                                  	<span>{{link.title}}</span>
                                   {% endif %}
 								{% if block.settings.sub_menu_img_block_id == link.title %}
 									{% render 'menu-item', config: block.settings %}
