@@ -357,18 +357,15 @@
                       <span class="brand__menu-item {%- if link.child_active %} header__active-menu-item{% endif %}">{{ link.title | escape }}</span>
                     </summary>
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                      {% for block in section.blocks %}
-                        {% case block.type %}
-                          {% when 'sub_menu_img_block' %}
-                            {% if block.settings.sub_menu_img_block_id == link.title %}
-                              {% render 'menu-item', config: block.settings %}
-                            {% endif %}
-                          {% when 'sub_menu_block' %}
-                            {% if block.settings.sub_menu_img_block_id == link.title %}
-                              {% render 'menu-item', config: block.settings %}
-                            {% endif %}
-                        {% endcase %}
-                      {% endfor %}
+                      {%- for block in section.blocks -%}
+                        {%- for slide in block.settings -%}
+                            {%- if slide.id contains "image" and slide.src -%}
+                                {%- assign id = slide.id | split: "_" | last -%}
+                                {%- assign info = "info_" | append: id -%}
+                                {% render 'menu-item', image: slide, info: block.settings[info] %}
+                            {%- endif -%}
+                        {%- endfor -%}
+                      {%- endfor -%}
                     </ul>
                   </details>
                 </details-disclosure>
