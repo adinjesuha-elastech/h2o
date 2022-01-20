@@ -360,6 +360,7 @@
                       {%- for block in section.blocks -%}
                         {%- for slide in block.settings -%}
                             {%- if slide.id contains "image" and slide.src -%}
+                            	<div>hi</div>
                                 {%- assign id = slide.id | split: "_" | last -%}
                                 {%- assign info = "info_" | append: id -%}
                                 {% render 'menu-item', image: slide, info: block.settings[info] %}
