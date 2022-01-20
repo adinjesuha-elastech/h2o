@@ -359,7 +359,12 @@
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {% for block in section.blocks %} 
                       	{% assign popular_product = all_products[block.settings.product] %}
-                        <div>{{popular_product}}</div>
+                        {% for i in (1..4) %}
+                          {% assign setting_name = 'popular_product_' | append: i %}
+                          {% assign handle = section.settings[setting_name] %}
+                          {% assign popular_product = all_products[handle] %}
+                          <div>{{popular_product}}</div>
+                        {% endfor %}
                       {% endfor %}
                     </ul>
                   </details>
