@@ -371,6 +371,10 @@
                                           {% render 'menu-item', sub_menu_title: block.settings[sub_menu_title], sub_menu_img: block.settings[sub_menu_img], sub_menu_img_url: block.settings[sub_menu_img_url], sub_menu_lower_link_label: block.settings[sub_menu_lower_link_label], sub_menu_lower_link_url: block.settings[sub_menu_lower_link_url] %}
                                       {% endif %}
 									{% endfor %}
+								{% when 'sub_menu_block' %}
+									{% if block.settings.sub_menu_img_block_id == link.title %}
+										{% render 'menu-item', config: block.settings %}
+									{% endif %}
                             {% endcase %}
                       {% endfor %}
                     </ul>
