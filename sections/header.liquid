@@ -368,13 +368,12 @@
 									{% assign sub_menu_lower_link_label = 'sub_menu_lower_link_label_' | append: i %}
 									{% assign sub_menu_lower_link_url = 'sub_menu_lower_link_url_' | append: i %}
 									{% if block.settings[sub_menu_img_block_id] == link.title %}
-										{% render 'menu-item', sub_menu_title: block.settings[sub_menu_title], sub_menu_img: block.settings[sub_menu_img], sub_menu_img_url: block.settings[sub_menu_img_url], sub_menu_lower_link_label: block.settings[sub_menu_lower_link_label], sub_menu_lower_link_url: block.settings[sub_menu_lower_link_url] %}
+										{% render 'menu-item-w-image', sub_menu_title: block.settings[sub_menu_title], sub_menu_img: block.settings[sub_menu_img], sub_menu_img_url: block.settings[sub_menu_img_url], sub_menu_lower_link_label: block.settings[sub_menu_lower_link_label], sub_menu_lower_link_url: block.settings[sub_menu_lower_link_url] %}
 									{% endif %}
 								{% endfor %}
 							{% when 'sub_menu_block' %}
 								{% if block.settings.sub_menu_img_block_id == link.title %}
 									{% render 'menu-item', config: block.settings %}
-                                    
                                 {% endif %}
 						{% endcase %}
 					{% endfor %}
