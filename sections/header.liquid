@@ -378,7 +378,7 @@
                                 	{%- assign id = slide.id | split: "_" | last -%}
                                     {%- assign info = "info_" | append: id -%}
                                     {% render 'menu-item', config: block.settings, image: slide, info: block.settings[info] %}
-                                  {%- endif -%}
+								{%- endif -%}
                               {%- endfor -%}
                             {% when 'sub_menu_block' %}
                             {% if block.settings.sub_menu_img_block_id == link.title %}
