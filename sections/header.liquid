@@ -362,6 +362,7 @@
                             	{% when 'sub_menu_img_block' %}
                                   {% for i in (1..2) %}
                                     {% assign image_item = 'sub_menu_img_block_id_' | append: i %}
+                                    <div>{{image_item}}</div>
                                     {% if block.settings[image_item] == link.title %}
                                       {% render 'menu-item', config: block.settings %}
                                     {% endif %}
