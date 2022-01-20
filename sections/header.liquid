@@ -374,7 +374,7 @@
 								{% endfor %}
 							{% when 'sub_menu_block' %}
                             	<div>
-                                  {% if block.settings.sub_menu_img_block_id == link.title %}
+                                  {% if block.settings[sub_menu_img_block_id] == link.title %}
                                       <span>{{block.settings.sub_menu_img_block_id}}</span>
                                   {% endif %}
                                 </div>
