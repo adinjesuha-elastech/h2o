@@ -360,6 +360,7 @@
                     {% for block in section.blocks %}
                     	<div>Blocks</div>
                     	{% case block.type %}
+                        <div>sub_menu_img_block</div>
 							{% when 'sub_menu_img_block' %}
 								{% for i in (1..2) %}
 									{% assign sub_menu_img_block_id = 'sub_menu_img_block_id_' | append: i %}
@@ -373,6 +374,7 @@
 									{% endif %}
 								{% endfor %}
 							{% when 'sub_menu_block' %}
+                            	<div>sub_menu_block</div>
 								{% if block.settings.sub_menu_img_block_id == link.title %}
 									{% render 'menu-item', config: block.settings %}
                                 {% endif %}
