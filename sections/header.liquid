@@ -348,18 +348,6 @@
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
-          
-          {%- for block in section.blocks -%}
-          	{%- for slide in block.settings -%}
-          		{%- if slide.id contains "image" and slide.src -%}
-          			{%- assign id = slide.id | split: "_" | last -%}
-          			{%- assign info = "info_" | append: id -%}
-          			{% render 'menu-item', image: slide, info: block.settings[info] %}
-          		{%- endif -%}
-          	{%- endfor -%}
-          {%- endfor -%}
-
-
           {%- for link in section.settings.menu.links -%}
             <li>
               {%- if link.links != blank -%}
@@ -371,6 +359,7 @@
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                       {% for block in section.blocks %} 
                       	{% assign popular_product = all_products[block.settings.product] %}
+                        <div>{{popular_product}}</div>
                       {% endfor %}
                     </ul>
                   </details>
