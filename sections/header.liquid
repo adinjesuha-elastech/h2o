@@ -357,27 +357,26 @@
                       <span class="brand__menu-item {%- if link.child_active %} header__active-menu-item{% endif %}">{{ link.title | escape }}</span>
                     </summary>
                     <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                    	{% for block in section.blocks %}
-                        	{% case block.type %}
-                            	{% when 'sub_menu_img_block' %}
-                                	{% for i in (1..2) %}
-                                      {% assign sub_menu_img_block_id = 'sub_menu_img_block_id_' | append: i %}
-                                      {% assign sub_menu_title = 'sub_menu_title_' | append: i %}
-                                      {% assign sub_menu_img = 'sub_menu_img_' | append: i %}
-                                      {% assign sub_menu_img_url = 'sub_menu_img_url_' | append: i %}
-                                      {% assign sub_menu_lower_link_label = 'sub_menu_lower_link_label_' | append: i %}
-                                      {% assign sub_menu_lower_link_url = 'sub_menu_lower_link_url_' | append: i %}
-                                      {% if block.settings[sub_menu_img_block_id] == link.title %}
-                                          {% render 'menu-item', sub_menu_title: block.settings[sub_menu_title], sub_menu_img: block.settings[sub_menu_img], sub_menu_img_url: block.settings[sub_menu_img_url], sub_menu_lower_link_label: block.settings[sub_menu_lower_link_label], sub_menu_lower_link_url: block.settings[sub_menu_lower_link_url] %}
-                                      {% endif %}
-									{% endfor %}
-								{% when 'sub_menu_block' %}
-									{% if block.settings.sub_menu_img_block_id == link.title %}
-                                    	<span>{% if block.settings.sub_menu_img_block_id == link.title %} Hi {% endif %}</span>
-										{% render 'menu-item', config: block.settings %}
+                    {% for block in section.blocks %}
+                    	{% case block.type %}
+							{% when 'sub_menu_img_block' %}
+								{% for i in (1..2) %}
+									{% assign sub_menu_img_block_id = 'sub_menu_img_block_id_' | append: i %}
+									{% assign sub_menu_title = 'sub_menu_title_' | append: i %}
+									{% assign sub_menu_img = 'sub_menu_img_' | append: i %}
+									{% assign sub_menu_img_url = 'sub_menu_img_url_' | append: i %}
+									{% assign sub_menu_lower_link_label = 'sub_menu_lower_link_label_' | append: i %}
+									{% assign sub_menu_lower_link_url = 'sub_menu_lower_link_url_' | append: i %}
+									{% if block.settings[sub_menu_img_block_id] == link.title %}
+										{% render 'menu-item', sub_menu_title: block.settings[sub_menu_title], sub_menu_img: block.settings[sub_menu_img], sub_menu_img_url: block.settings[sub_menu_img_url], sub_menu_lower_link_label: block.settings[sub_menu_lower_link_label], sub_menu_lower_link_url: block.settings[sub_menu_lower_link_url] %}
 									{% endif %}
-                            {% endcase %}
-                      {% endfor %}
+								{% endfor %}
+							{% when 'sub_menu_block' %}
+								{% if block.settings.sub_menu_img_block_id == link.title %}
+									{% render 'menu-item', config: block.settings %}
+							{% endif %}
+						{% endcase %}
+					{% endfor %}
                     </ul>
                   </details>
                 </details-disclosure>
